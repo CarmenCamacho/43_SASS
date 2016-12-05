@@ -1,0 +1,57 @@
+h1, h2, h3, h4, h5, p {
+  font-weight: lighter; }
+
+.fondomain {
+  position: relative;
+  background-image: url("../images/1920x665-1.jpg");
+  background-size: cover;
+  height: 80vH;
+  width: 100%; }
+
+.negro {
+  height: 80vH;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.mt10 {
+  margin-top: 5%; }
+
+.uno, .dos, .tres {
+  padding-top: 4%;
+  padding-right: 2%;
+  padding-bottom: 4%;
+  padding-left: 4%; }
+
+nav a {
+  color: grey !important; }
+
+.uno h2 {
+  color: #fafafa; }
+.uno p {
+  color: #fafafa; }
+
+.dos {
+  color: grey;
+  background-color: #fafafa;
+  -webkit-box-shadow: inset 0 0 3em #eeeeee;
+  -moz-box-shadow: inset 0 0 3em #eeeeee;
+  box-shadow: inset 0 0 3em #eeeeee; }
+  .dos span {
+    color: #03a9f4; }
+
+.tres {
+  background-color: #fafafa;
+  -webkit-box-shadow: inset 0 0 3em #eeeeee;
+  -moz-box-shadow: inset 0 0 3em #eeeeee;
+  box-shadow: inset 0 0 3em #eeeeee;
+  color: grey; }
+
+button {
+  color: #03a9f4;
+  background-color: transparent !important;
+  border: 2px solid #03a9f4;
+  border-radius: 50px;
+  padding: 2%; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,102 @@
+$height: 80vH;
+
+
+// @mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+//   @if $inset {
+//     -webkit-box-shadow:inset $top $left $blur $color;
+//     -moz-box-shadow:inset $top $left $blur $color;
+//     box-shadow:inset $top $left $blur $color;
+//   } @else {
+//     -webkit-box-shadow: $top $left $blur $color;
+//     -moz-box-shadow: $top $left $blur $color;
+//     box-shadow: $top $left $blur $color;
+//   }
+// }
+
+
+@mixin box-shadow($top, $left, $blur, $color, $inset) {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+}
+
+$colorclaro: #fafafa;
+$colorclaro2: #eeeeee;
+$colormedio: grey;
+$coloracento: #03a9f4;
+
+
+h1, h2, h3, h4,h5, p{
+	font-weight:lighter;
+}
+
+.fondomain{
+	position: relative;
+	background-image: url("../images/1920x665-1.jpg");
+	background-size: cover;
+	height: $height;
+	width:100%;
+	;
+}
+
+.negro{
+	height: $height;
+	width: 100%;
+	position:absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mt10{
+	margin-top:5%;
+}
+
+.uno, .dos, .tres{
+	padding: {
+		top:4%;
+		right: 2%;
+		bottom:4%;
+		left: 4%
+	}
+
+
+}
+
+nav{
+	a{
+	color:$colormedio !important;
+	}
+}
+
+.uno{
+	h2{ color:$colorclaro}
+	p{ color:$colorclaro}
+}
+
+.dos{
+	color:$colormedio ;
+	background-color:$colorclaro;
+	@include box-shadow(0, 0, 3em, $colorclaro2, inset);
+
+	span{
+	color:$coloracento;
+	}
+}
+
+.tres{
+	background-color:$colorclaro;
+
+	@include box-shadow(0, 0, 3em, $colorclaro2, inset);
+	color:$colormedio 
+}
+
+button{
+	color: $coloracento;
+	background-color: transparent !important;
+	border: 2px solid $coloracento;
+	border-radius:50px;
+	padding:2%;
+	
+}
+
+
+
